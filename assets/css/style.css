@@ -1,0 +1,76 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+a:hover { text-decoration: none }
+
+.main-menu-area {
+    padding: 100px 0;
+  }
+  .main-menu-area ul {
+    margin: 0;
+    list-style: none;
+    background-color: #25385b;
+    padding: 0px;
+  }
+  .main-menu-area ul li {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .main-menu-area ul li a {
+    font-size: 20px;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    display: block;
+    transition: .3s;
+  }
+  .main-menu-area ul li a:hover {
+    background-color: green;
+  }
+  
+.main-menu-area ul li ul {
+    position: absolute;
+    background-color: #00c9cf;
+    top: 40px;
+    width: 200px;
+    opacity: -1;
+    visibility: hidden;
+    transition: .4s;
+  }
+  .main-menu-area ul li ul li {
+    display: block;
+  }
+  .main-menu-area ul li ul li a {
+    padding: 5px;
+    text-transform: initial;
+    transition: .3s;
+  }
+  .main-menu-area li:hover ul {
+    opacity: 1;
+    visibility: unset;
+    top: 59px;
+  }
