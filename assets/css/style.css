@@ -27,6 +27,8 @@ h6 {
 }
 a:hover { text-decoration: none }
 
+/*Dropdown menu*/
+
 .main-menu-area {
     padding: 100px 0;
   }
@@ -74,3 +76,18 @@ a:hover { text-decoration: none }
     visibility: unset;
     top: 59px;
   }
+
+/*Second-level Dropdown menu*/
+
+  .main-menu-area li:hover ul ul {
+    left: 200px;
+    top: 80px;
+}
+.main-menu-area ul li:hover ul ul {
+    visibility: hidden;
+    opacity: -1;
+}
+.main-menu-area ul ul li:hover > ul {
+    visibility: unset;
+    opacity: 1;
+}
