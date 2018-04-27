@@ -30,7 +30,7 @@ a:hover { text-decoration: none }
 /*Dropdown menu*/
 
 .main-menu-area {
-    padding: 100px 0;
+    padding: 60px 0;
   }
   .main-menu-area ul {
     margin: 0;
@@ -90,4 +90,71 @@ a:hover { text-decoration: none }
 .main-menu-area ul ul li:hover > ul {
     visibility: unset;
     opacity: 1;
+}
+
+
+/*video Hover Yhumbnail*/
+
+
+.video-play-btn {
+  display: block;
+  background-position: center;
+  background-size: 120%;
+  height: 450px;
+  position: relative;
+}
+.video-overlay {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  transform: scale(.7);
+  transition: .3s;
+}
+.pluse {
+  font-size: 40px;
+}
+.heigh-pen {
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}
+.heigh-pen:before, .heigh-pen:after {
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  left: 27%;
+  bottom: 9px;
+}
+.heigh-pen:after{
+  left: auto;
+  right: 27%;
+}
+.video-overlay h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.last {
+  opacity: .8;
+}
+.video-overlay:after {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background-color: #25385b;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .5;
+}
+.video-overlay:hover {
+  transform: scale(1);
 }
